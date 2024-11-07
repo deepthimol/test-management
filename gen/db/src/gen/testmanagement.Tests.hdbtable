@@ -1,0 +1,14 @@
+COLUMN TABLE testmanagement_Tests (
+  ID NVARCHAR(36) NOT NULL,
+  createdAt TIMESTAMP,
+  createdBy NVARCHAR(255),
+  modifiedAt TIMESTAMP,
+  modifiedBy NVARCHAR(255),
+  title NVARCHAR(5000),
+  description NVARCHAR(5000),
+  price INTEGER,
+  currency_code NVARCHAR(3),
+  supplier_ID NVARCHAR(10),
+  rating INTEGER,
+  PRIMARY KEY(ID)
+)

@@ -1,0 +1,18 @@
+COLUMN TABLE DevChallengeService_Tests_drafts (
+  ID NVARCHAR(36) NOT NULL,
+  createdAt TIMESTAMP NULL,
+  createdBy NVARCHAR(255) NULL,
+  modifiedAt TIMESTAMP NULL,
+  modifiedBy NVARCHAR(255) NULL,
+  title NVARCHAR(5000) NULL,
+  description NVARCHAR(5000) NULL,
+  price INTEGER NULL,
+  currency_code NVARCHAR(3) NULL,
+  supplier_ID NVARCHAR(10) NULL,
+  rating INTEGER NULL,
+  IsActiveEntity BOOLEAN,
+  HasActiveEntity BOOLEAN,
+  HasDraftEntity BOOLEAN,
+  DraftAdministrativeData_DraftUUID NVARCHAR(36) NOT NULL,
+  PRIMARY KEY(ID)
+)

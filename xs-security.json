@@ -1,0 +1,33 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.RiskManager",
+      "description": "RiskManager"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "RiskManager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.RiskManager"
+      ],
+      "attribute-references": []
+    }
+  ],
+  "role-collections": [
+        {
+            "name": "RoleManager",
+            "description": "RiskManager",
+            "role-template-references": ["$XSAPPNAME.RiskManager"]
+        }],
+"oauth2-configuration": {
+        "redirect-uris": [
+            "https://*.applicationstudio.cloud.sap/**",
+            "https://*.authentication.us10-001.hana.ondemand.com/**",
+            "https://*.hana.ondemand.com/**",
+            "http://localhost:*/**"
+        ]
+    }
+}

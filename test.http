@@ -1,0 +1,33 @@
+GET http://localhost:4004/odata/v4/dev-challenge/Tests
+
+ 
+
+###
+POST http://localhost:4004/odata/v4/dev-challenge/Tests(testId='1')/DevChallengeService.createTest
+Content-Type: application/json
+
+{
+  "questionText": "new",
+  "answerText": "one"
+}
+
+###
+POST http://localhost:4004/odata/v4/dev-challenge/Tests(testId=1,IsActiveEntity=true)/assignQuestionsToTest
+Content-Type: application/json
+
+{
+  "questionsCount": 3
+}
+###
+POST http://localhost:4004/odata/v4/dev-challenge/assignQuestionsToTest
+Content-Type: application/json
+
+{
+  "questionsCount": 3
+}
+
+###
+
+
+GET http://localhost:4004/odata/v4/dev-challenge/Tests
+Authorization: Basic risk.manager@tester.sap.com:initial

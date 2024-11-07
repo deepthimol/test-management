@@ -1,0 +1,7 @@
+COLUMN TABLE testmanagement_Questions_answers (
+  up__questionId NVARCHAR(5000) NOT NULL,
+  answerId NVARCHAR(5000) NOT NULL,
+  "TEXT" NVARCHAR(5000),
+  questions_questionId NVARCHAR(5000),
+  PRIMARY KEY(up__questionId, answerId)
+)

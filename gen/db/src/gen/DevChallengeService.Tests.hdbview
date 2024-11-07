@@ -1,0 +1,13 @@
+VIEW DevChallengeService_Tests AS SELECT
+  Tests_0.ID,
+  Tests_0.createdAt,
+  Tests_0.createdBy,
+  Tests_0.modifiedAt,
+  Tests_0.modifiedBy,
+  Tests_0.title,
+  Tests_0.description,
+  Tests_0.price,
+  Tests_0.currency_code,
+  Tests_0.supplier_ID,
+  Tests_0.rating
+FROM testmanagement_Tests AS Tests_0
