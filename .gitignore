@@ -4,3 +4,6 @@ node_modules
 .ssh
 .ssh.pub
 .vscode/
+app/testing/dist/
+gen
+resources
