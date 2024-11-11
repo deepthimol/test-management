@@ -1,5 +1,0 @@
-VIEW DevChallengeService_Questions AS SELECT
-  Questions_0.questionId,
-  Questions_0.test_ID,
-  Questions_0."TEXT"
-FROM testmanagement_Questions AS Questions_0
